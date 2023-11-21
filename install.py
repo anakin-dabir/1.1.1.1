@@ -9,7 +9,7 @@ os.system("pip3 install -r requirements.txt")
 os.system('echo "export HOME={}" >> ~/.bashrc'.format(cur_path))
 os.system("cp {}/icons/logo.png ~/.local/share/icons/warp_gui.png".format(cur_path))
 
-desktop_file = '{}/.local/share/applications/1.1.11.desktop'.format(Path.home())
+desktop_file = '{}/.local/share/applications/1.1.1.1.desktop'.format(Path.home())
 
 file = open(desktop_file, 'w+')
 file.write('''[Desktop Entry]
