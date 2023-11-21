@@ -1,3 +1,4 @@
 PyQt5
 qtwidgets
 qtpy
+pyinstaller
