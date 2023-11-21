@@ -1,43 +1,26 @@
-# Warp Cloudflare GUI
+# Warp Cloudflare 1.1.1.1 GUI
 
 A GUI application based on [warp-cli](https://developers.cloudflare.com/warp-client/get-started/linux) for Linux.
-
-## Quick Access
-
-- [Installation](#installation)
-- [Hidden Mode](#hidden-mode)
-- [Uninstall](#uninstall)
-- [Screenshot](#screenshot)
-- [Resolved Issues](#resolved-issues)
 
 ## Installation
 
 Read the [warp-cli install](https://developers.cloudflare.com/warp-client/get-started/linux) documentation. Install `warp-cli` and
 register with the `$ warp-cli register` command.
 
+> 👉 Make Sure to create Virtual Environment
+
 Then execute the following commands:
 
-    $ git clone https://github.com/mrmoein/warp-cloudflare-gui
-    $ cd warp-cloudflare-gui
+    $ git clone https://github.com/anakin-dabir/1.1.1.1
+    $ cd 1.1.1.1
     $ python3 install.py
-    $ sudo chmod +x ~/.local/share/applications/warp-gui.desktop
+    $ pyinstaller --onefile --add-data "~/1.1.1.1/icons:icons" main.py
+    $ sudo chmod +x ~/.local/share/applications/1.1.1.1.desktop
 
-Now search for `warp cloudflare` in your desktop menu.
+Now search for `1.1.1.1` in your desktop menu.
 
-> ⚠️ IMPORTANT: After the installation please make sure you do not remove the repository directory. It is required for the desktop shortcut to work.
-
-## Hidden Mode
-If you only want to use the tray icon, you can run the program in hidden mode.
-    
-    $ python ./main.py --hide
+> 👉 After the installation please make sure you do not remove 1.1.1.1/dist/ directory
 
 ## Uninstall
 
-Just remove the `~/.local/share/applications/warp-gui.desktop` file.
-
-## Screenshot
-
-![warp cloudflare gui](icons/Screenshot.png)
-
-## Resolved Issues
-- [There are 2 tray icons of WARP CLI and this GUI app](https://github.com/mrmoein/warp-cloudflare-gui/issues/11)
+Remove the `~/.local/share/applications/1.1.1.1.desktop` file.
